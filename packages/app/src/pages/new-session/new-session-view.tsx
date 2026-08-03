@@ -143,7 +143,7 @@ function ProviderTip() {
           <TooltipV2
             class="hover-reveal absolute left-full top-0 flex h-6 w-7 items-center justify-end delay-0 duration-0 group-hover/provider-tip:delay-[250ms] group-hover/provider-tip:duration-150 group-hover/provider-tip:opacity-100 focus-within:delay-0 focus-within:duration-0 focus-within:opacity-100"
             placement="top"
-            openDelay={1000}
+            delay="intent"
             value={language.t("common.dismiss")}
           >
             <button
