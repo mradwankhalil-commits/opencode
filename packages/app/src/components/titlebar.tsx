@@ -338,6 +338,22 @@ export function Titlebar(props: { update?: TitlebarUpdate; debugTools?: { visibl
                   keybind: "mod+shift+t",
                   onSelect: () => tabsStoreActions.reopenClosedTab(),
                 },
+                {
+                  id: `tab.prev`,
+                  category: "tab",
+                  title: "",
+                  keybind: `mod+option+ArrowLeft,ctrl+shift+tab`,
+                  hidden: true,
+                  onSelect: tabs.previous,
+                },
+                {
+                  id: `tab.next`,
+                  category: "tab",
+                  title: "",
+                  keybind: `mod+option+ArrowRight,ctrl+tab`,
+                  hidden: true,
+                  onSelect: tabs.next,
+                },
               ].filter((v) => v !== undefined)
             })
 
